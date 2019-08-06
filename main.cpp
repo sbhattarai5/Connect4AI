@@ -10,9 +10,6 @@ int main()
 {
     Connect4 * game1 = new Connect4();
     GameTree tree1(game1);
-    
-    //std::cout << tree1;
-    //std::cout << *game1;
     int col_input = -2;
     std::cout << "\n****************************************************************************";
     std::cout << "\nWelcome to the Connect4 AI game. Play against the AI who is not so smart...";
