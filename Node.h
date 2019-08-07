@@ -10,7 +10,7 @@
 const int MAX_DEPTH = 11;  //analyzes seven steps ahead
 const int POS_INFINITY = 9999;   //this is bigger than the max possible points given by the heuristics
 const int NEG_INFINITY = -9999;  //this is smaller than the min possible points given by the heuristics
-
+const int NONE = -123456;        //represents None value  
 
 class Node
 {
@@ -71,9 +71,10 @@ public:
                 _childrens.push_back(new_child);
                 delete new_game;
                 int new_value = new_child->max_value(alpha, beta);
+                if (new_value == NONE) continue;
                 if (new_value <= alpha)
                 {
-                    return new_value;
+                    return NONE;
                 }
                 if (beta > new_value) beta = new_value;
                 if (value > new_value) value = new_value;
@@ -95,9 +96,10 @@ public:
                 _childrens.push_back(new_child);
                 delete new_game;
                 int new_value = new_child->min_value(alpha, beta);
+                if (new_value == NONE) continue;
                 if (new_value >= beta)
                 {
-                    return new_value;
+                    return NONE;
                 }
                 if (alpha < new_value) alpha = new_value;
                 if (value < new_value) value = new_value;
