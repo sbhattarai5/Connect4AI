@@ -7,7 +7,7 @@
 #include "Connect4.h"
 #include <vector>
 
-const int MAX_DEPTH = 11;  //analyzes seven steps ahead
+const int MAX_DEPTH = 11;  //analyzes eleven steps ahead
 const int POS_INFINITY = 9999;   //this is bigger than the max possible points given by the heuristics
 const int NEG_INFINITY = -9999;  //this is smaller than the min possible points given by the heuristics
 const int NONE = -123456;        //represents None value  
