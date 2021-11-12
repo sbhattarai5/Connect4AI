@@ -1,6 +1,8 @@
 //Name: Node.h
 //File: Saurav Bhattarai
 
+// A node with a specific board state
+
 #ifndef NODE_H
 #define NODE_H
 

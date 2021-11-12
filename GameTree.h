@@ -1,6 +1,8 @@
 //Name: Node.h
 //File: Saurav Bhattarai
 
+// A tree of Nodes with Connect 4 game states
+
 #ifndef GAMETREE_H
 #define GAMETREE_H
 #include "Node.h"

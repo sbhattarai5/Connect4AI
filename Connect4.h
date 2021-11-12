@@ -10,7 +10,7 @@ const int SEQUENCE_REQUIRED = 4;    //sequence required to win the game
 const char B = 'B';
 const char Y = 'Y';
 const char SPACE = ' ';
-const char MAXIMIZER = 'B';    //my minimax algorithm calculates the heurestics on the basis of maximizer
+const char MAXIMIZER = 'B'; //my minimax algorithm tries to make the MAXIMIZER win
 
 class Connect4
 {

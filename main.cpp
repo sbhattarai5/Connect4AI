@@ -4,7 +4,7 @@
 #include <iostream>
 #include "GameTree.h"
 
-bool Node::debug_printing = false; //debug printing is off
+bool Node::debug_printing = false; //debug printing is off by default
 
 int main()
 {
